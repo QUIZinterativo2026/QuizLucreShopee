@@ -59,7 +59,15 @@ html,body{height:100%; margin:0; font-family:'Inter',sans-serif; background: lin
 #resultsContainer ul{margin-top:8px;}
 #resultsContainer .recommendation{margin-bottom:6px;}
 #resultsContainer .percent-display{font-size:3rem;font-weight:700;text-align:center;margin-top:24px;color:var(--accent-1);}
-@media (max-width:640px){.quiz-container{margin:16px; border-radius:12px;}.btn-primary{padding:12px 22px;font-size:16px;}}
+@media (max-width:640px){.quiz-container{margin:16px; border-radius:12px;}.btn-primary{padding:12px 22px;font-size:16px;}} 
+  #affiliateBtn {
+  display: flex;
+  flex-direction: column; /* coloca as linhas em coluna */
+  align-items: center;    /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  text-align: center;      /* garante que o texto quebre centralizado */
+}
+
 </style>
 </head>
 
@@ -205,5 +213,6 @@ function finishQuiz(){
 </script>
 </body>
 </html>
+
 
 
