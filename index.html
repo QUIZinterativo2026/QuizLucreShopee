@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Descubra Como Ganhar Dinheiro Todos os Dias com a Shopee!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Potencial Afiliado Shopee | Plataforma Premium</title>
+    <meta name="description" content="Descubra seu potencial real para lucrar como afiliado na Shopee. Avaliação rápida, clara e honesta.">
+    <!-- Tailwind CSS CDN -->
 
-<!-- Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8F8V04HVT6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,192 +15,798 @@
   gtag('js', new Date());
   gtag('config', 'G-8F8V04HVT6');
 </script>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap">
 
-<!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Tailwind Configuration (Tema Shopee) -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'charcoal': '#0b0f14',
+                        'shopee-red': '#FF4500', // Principal: Laranja-Vermelho Vibrante
+                        'shopee-light': '#FF7043', // Secundário: Laranja mais suave
+                        'success-green': '#22c55e',
+                        'ice-white': '#f5f7fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        // Sombra de cor primária (agora laranja)
+                        'primary-glow': '0 0 15px rgba(255, 69, 0, 0.6), 0 0 5px rgba(255, 69, 0, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
 
-<style>
-:root{
-  --bg: #0f172a;
-  --card: #1e293b;
-  --text: #f1f5f9;
-  --muted: #94a3b8;
-  --accent-1: #f97316;
-  --accent-2: #fb923c;
-  --accent-3: #fdba74;
-  --success: #22c55e;
-  --warn: #facc15;
-  --danger: #ef4444;
-}
-html,body{height:100%; margin:0; font-family:'Inter',sans-serif; background: linear-gradient(180deg,#0f172a,#1e293b); color: var(--text);}
-.quiz-container{max-width:820px; margin:0 auto; background: var(--card); border-radius:16px; box-shadow:0 16px 40px rgba(0,0,0,0.5); overflow:hidden; will-change: transform,opacity;}
-.hero-graphic{position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:0;}
-.hero-shape{position:absolute; width:520px; height:520px; filter: blur(56px); opacity:0.12; border-radius:50%; transform:translate3d(-10%, -10%, 0) scale(1);}
-.hero-shape.a{background: radial-gradient(circle at 30% 30%, var(--accent-2), transparent 40%); left:-120px; top:-80px;}
-.hero-shape.b{background: radial-gradient(circle at 50% 50%, var(--accent-3), transparent 40%); right:-160px; top:-40px;}
-.btn-primary{background: linear-gradient(90deg,var(--accent-2),var(--accent-3)); color:#fff; border-radius:999px; padding:14px 26px; display:inline-flex; align-items:center; gap:12px; font-weight:700; font-size:16px; box-shadow:0 10px 30px rgba(251,146,60,0.4); transition: transform 220ms, box-shadow 220ms;}
-.btn-primary:hover{transform: translateY(-6px) scale(1.01); box-shadow:0 18px 40px rgba(251,146,60,0.6);}
-.quiz-option{border-radius:10px; border:1px solid rgba(255,255,255,0.1); padding:14px 16px; cursor:pointer; transition: transform 160ms, box-shadow 160ms, background 160ms; background:#1e293b; display:flex; align-items:center; color: var(--text);}
-.quiz-option + .quiz-option{margin-top:12px;}
-.quiz-option:hover{transform: translateY(-4px); box-shadow:0 8px 22px rgba(255,255,255,0.1);}
-.quiz-option.selected{background: linear-gradient(90deg, var(--accent-3), var(--accent-2)); border-color: var(--accent-1); color:#fff;}
-.progress-wrap{height:10px; background:linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2)); border-radius:999px; overflow:hidden;}
-.progress-fill{height:100%; width:0%; background:linear-gradient(90deg,var(--accent-2),var(--accent-1)); transition: width 600ms;}
-.btn-back{background:transparent; border:1px solid rgba(255,255,255,0.2); padding:10px 14px; border-radius:10px; transition: transform 160ms; color: var(--text);}
-.btn-back:disabled{opacity:0.45; pointer-events:none;}
-.result-badge{display:inline-block; padding:10px 14px; border-radius:999px; color:#fff; font-weight:700; font-size:14px;}
-.muted{color:var(--muted);}
-.pane { opacity:0; transform: translateY(8px); transition: transform 360ms, opacity 320ms;}
-.pane.show{ opacity:1; transform: translateY(0);}
-#quizContent{min-height:240px;}
-#resultsContainer .btn-primary{font-size:20px; padding:18px 32px;}
-#resultsContainer h2{font-size:2.5rem; margin-bottom:8px;}
-#resultsContainer p{font-size:1.1rem;}
-#resultsContainer ul{margin-top:8px;}
-#resultsContainer .recommendation{margin-bottom:6px;}
-#resultsContainer .percent-display{font-size:3rem;font-weight:700;text-align:center;margin-top:24px;color:var(--accent-1);}
-@media (max-width:640px){.quiz-container{margin:16px; border-radius:12px;}.btn-primary{padding:12px 22px;font-size:16px;}}
-</style>
+    <!-- Custom Styles for Premium Effects -->
+    <style>
+        body {
+            background-color: #0b0f14;
+            font-family: 'Inter', sans-serif;
+            color: #f5f7fa;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        /* Efeito Glassmorphism/Neumorphism (agora no tema laranja) */
+        .glass-card {
+            background-color: rgba(11, 15, 20, 0.7); /* Charcoal semitransparente */
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 69, 0, 0.4);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 69, 0, 0.1);
+        }
+
+        /* Efeito de Reflexo / Scanner Beam (animação no botão CTA) */
+        @keyframes reflect-sweep {
+            0% { left: -100%; }
+            100% { left: 150%; }
+        }
+        .cta-reflection {
+            overflow: hidden;
+            position: relative;
+            z-index: 1; /* Garante que o conteúdo fique por baixo */
+            /* Sombra sutil para definição, não um brilho agressivo */
+            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+        }
+        .cta-reflection::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 20%; /* Largura da "varredura" */
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg); /* Inclinação do reflexo */
+            animation: reflect-sweep 3s infinite ease-in-out 1s; /* Animação de varredura */
+            z-index: 2;
+        }
+
+        /* Efeito de vidro/reflexo no texto do título */
+        .glass-text {
+            /* Adiciona um sutil reflexo branco e uma sombra suave da cor primária */
+            text-shadow: 0 0 1px #fff, 0 0 5px rgba(255, 112, 67, 0.5);
+        }
+
+        /* Fundo Animado Simples */
+        .animated-bg::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* Micro-gradiente suave para o fundo, agora em tom laranja */
+            background: radial-gradient(circle at 50% 10%, #1a1e26 0%, #0b0f14 80%);
+            opacity: 0.9;
+        }
+
+        /* Estilos para partículas de fundo (removido animação de pulso) */
+        @media (prefers-reduced-motion: reduce) {
+            .cta-reflection::after {
+                display: none;
+            }
+        }
+        .particle {
+            will-change: transform, opacity;
+            box-shadow: 0 0 5px rgba(255, 69, 0, 0.9);
+        }
+        
+        
+    </style>
+
+    
 </head>
-
-<body class="min-h-screen flex flex-col items-center">
-
-<header class="w-full relative overflow-hidden">
-  <div class="hero-graphic" aria-hidden="true">
-    <div class="hero-shape a"></div>
-    <div class="hero-shape b"></div>
-  </div>
-  <div class="max-w-4xl mx-auto px-6 py-16 relative z-10 text-center">
-    <p class="text-sm font-semibold" style="color: var(--accent-1)">LUCRE COM SHOPEE</p>
-    <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-4">Quiz: Você está pronto para transformar seu tempo livre em dinheiro?</h1>
-    <p class="max-w-2xl mx-auto muted mb-8">Responda rápido e descubra como faturar como afiliado da Shopee, sem precisar vender produtos fisicamente ou aparecer em vídeos.</p>
-    <div class="flex items-center justify-center gap-4">
-      <button id="startQuizBtn" class="btn-primary" aria-controls="quizContainer">🚀 Iniciar Teste Grátis</button>
-    </div>
-    <p class="mt-4 muted text-sm">Quanto mais cedo começar, mais cedo lucra.</p>
-  </div>
-</header>
-
-<main class="w-full flex-1 flex items-start justify-center px-4 pb-20">
-  <div id="quizContainer" class="quiz-container p-8 hidden" role="region" aria-live="polite">
-    <div class="flex items-center justify-between mb-6">
-      <div>
-        <div class="text-sm muted">Treinamento Lucre com Shopee</div>
-        <div class="text-lg font-semibold">Responda algumas perguntas rápidas</div>
-      </div>
-      <div class="text-sm muted">~30 segundos</div>
-    </div>
-    <div class="progress-wrap mb-6"><div id="progressFill" class="progress-fill"></div></div>
-    <div id="quizContent"></div>
-  </div>
-
-  <div id="resultsContainer" class="quiz-container p-8 hidden" aria-live="polite">
-    <div class="md:flex md:gap-8 items-start">
-      <div class="flex-1">
-        <h2 id="resultHeading" class="text-4xl font-extrabold mb-2">Seu Potencial de Ganhos</h2>
-        <p id="resultSummary" class="muted mb-6">Resumo aparecerá aqui.</p>
-        <div id="badgeWrap" class="mb-6"></div>
-        <div>
-          <h4 class="font-semibold mb-2">Recomendações práticas</h4>
-          <ul id="recommendations" class="list-disc pl-5 muted"></ul>
+<body class="animated-bg min-h-screen">
+    <div id="particles"></div>
+    <header class="p-4 md:p-6 border-b border-shopee-red/30 sticky top-0 bg-charcoal/90 backdrop-blur-sm z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-black tracking-wider text-shopee-light">
+                <span class="text-charcoal bg-shopee-red px-1 py-0.5 rounded-sm mr-1">QUIZ</span>-SHOPEE
+            </h1>
+            <nav>
+                <a href="#faq" class="text-ice-white/80 hover:text-shopee-light transition duration-300 text-sm md:text-base">FAQ</a>
+            </nav>
         </div>
-        <div class="percent-display" id="percentDisplay">0%</div>
-        <div class="mt-8 text-center">
-          <a id="affiliateBtn" href="https://infinitydigitalofc.github.io/Treinamento-lucre-com-Shopee/" target="_blank" class="btn-primary">🔥 GARANTIR MINHA VAGA</a>
-          <p class="text-sm muted mt-3">Suporte completo • Método passo a passo</p>
+    </header>
+
+    <main id="main-content" class="max-w-6xl mx-auto px-4 py-8 md:py-16 relative z-10">
+
+        <!-- HERO SECTION (Visible initially) -->
+        <section id="hero-section" class="text-center transition-opacity duration-700 ease-out">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-shopee-light to-shopee-red glass-text">
+                    Transforme seu tempo livre em lucro com afiliados da Shopee
+                </h2>
+                <p class="text-lg md:text-xl text-ice-white/70 mb-8 font-medium max-w-2xl mx-auto">
+                    Faça o teste e veja seu potencial em segundos direto, rápido e fácil.
+                </p>
+                <button onclick="startQuiz()" id="start-quiz-btn"
+                    class="cta-reflection inline-flex items-center justify-center px-8 py-3 md:px-12 md:py-4 text-lg md:text-xl font-extrabold rounded-xl
+                           bg-shopee-red text-charcoal shadow-xl transform transition hover:scale-[1.03] active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-shopee-light/50"
+                    aria-label="Iniciar Avaliação Grátis" role="button">
+                    
+                    Iniciar Avaliação Grátis
+                </button>
+                <p class="mt-4 text-sm text-ice-white/50">
+                    <svg class="w-4 h-4 inline mr-1 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Dura aproximadamente 30 segundos. Privacidade garantida, sem SPAM.
+                </p>
+            </div>
+        </section>
+
+        <!-- QUIZ CARD SECTION (Hidden initially) -->
+        <section id="quiz-section" class="hidden opacity-0 scale-95 transition-all duration-700 ease-in-out">
+            <div class="glass-card max-w-xl mx-auto p-6 md:p-8 rounded-2xl border-2 border-shopee-red/60">
+                <h3 class="text-xl md:text-2xl font-extrabold text-shopee-light mb-4 text-center">Avaliação de Potencial</h3>
+
+                <!-- Progress Bar -->
+                <div class="mb-6">
+                    <div class="text-sm font-semibold text-ice-white/70 mb-2 flex justify-between">
+                        <span>Progresso: <span id="current-step-display">1</span>/<span id="total-steps-display"></span></span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="h-2 rounded-full bg-charcoal/50 overflow-hidden">
+                        <div id="progress-bar" class="h-full rounded-full transition-all duration-500 ease-out relative" style="width: 0%; background: linear-gradient(90deg, #FF4500 0%, #FF7043 100%);">
+                            <!-- Micro-sparkle effect -->
+                            <div class="absolute inset-0 bg-[rgba(255,255,255,0.2)]" style="clip-path: polygon(0% 0%, 5% 0%, 15% 100%, 0% 100%); animation: sparkle-move 1.5s infinite linear;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Questions Container -->
+                <div id="questions-container" class="relative min-h-[250px] md:min-h-[300px]">
+                    <!-- Questions will be dynamically inserted here -->
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between mt-6 pt-4 border-t border-shopee-red/30">
+                    <button id="back-btn" onclick="prevStep()" disabled
+                        class="px-4 py-2 text-sm font-semibold rounded-lg transition duration-300 text-ice-white/50 hover:text-shopee-light disabled:opacity-30 disabled:cursor-not-allowed"
+                        aria-label="Voltar para a pergunta anterior">
+                        &larr; Voltar
+                    </button>
+                    <button id="next-btn" onclick="nextStep()" disabled
+                        class="px-6 py-2 text-base font-bold rounded-lg transition duration-300 disabled:opacity-30 disabled:cursor-not-allowed
+                               bg-shopee-red text-charcoal hover:bg-shopee-light transform hover:scale-[1.02]"
+                        aria-label="Próxima pergunta" role="button">
+                        Próxima &rarr;
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- RESULTS SECTION (Hidden until completion) -->
+        <section id="results-section" class="hidden opacity-0 transition-opacity duration-700 ease-in-out">
+            <div class="glass-card max-w-4xl mx-auto p-6 md:p-10 rounded-2xl border-2 border-shopee-red/60">
+                
+                <h3 id="result-title" class="text-3xl md:text-4xl font-black mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-shopee-light to-shopee-red glass-text"></h3>
+                <p id="result-summary" class="text-lg text-ice-white/70 text-center mb-8"></p>
+
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <!-- Custom Animated Pie Chart (Left Side) -->
+                    <div class="flex-shrink-0 w-full md:w-1/3 text-center relative">
+                        <!-- Removido o filtro CSS drop-shadow para evitar clipping -->
+                        <svg id="pie-chart-svg" viewBox="0 0 100 100" class="w-48 h-48 sm:w-64 sm:h-64 mx-auto" aria-labelledby="chart-title chart-desc">
+                            <title id="chart-title">Gráfico de Nível de Preparação</title>
+                            <desc id="chart-desc">Exibe a distribuição da sua pontuação de potencial.</desc>
+                            <!-- Circle for background -->
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#1a1e26" stroke-width="10"/>
+                            <!-- Chart Slices (Dynamic) -->
+                        </svg>
+                        <!-- Animated Percentage in Center -->
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <span id="animated-percentage" class="text-4xl md:text-5xl font-black text-shopee-light">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations and Action (Right Side) -->
+                    <div class="flex-grow w-full md:w-2/3">
+                        <h4 class="text-xl font-bold mb-4 text-shopee-light border-b border-shopee-red/30 pb-2">Seu Plano de Ação Rápido</h4>
+                        <ul id="recommendations-list" class="space-y-4 mb-8">
+                            <!-- Recommendations will be inserted here -->
+                        </ul>
+
+                        <!-- CTA FINAL - COPY FORTE e Reflexo Animado -->
+                        <a href="https://infinitydigitalofc.github.io/TreinamentoLucrecomShopee/" target="_blank"
+                            class="cta-reflection w-full inline-flex items-center justify-center px-8 py-4 text-xl font-extrabold rounded-xl bg-shopee-red text-charcoal shadow-xl transform transition hover:scale-[1.01] active:scale-[0.99]"
+                            role="button" aria-label="Juntar ao treinamento agora">
+                           
+                            Quero Começar a Lucrar Hoje Mesmo!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Botão Voltar ao Início -->
+                <div class="mt-8 text-center pt-6 border-t border-charcoal/50">
+                    <button onclick="restartQuiz()" class="text-sm text-ice-white/50 hover:text-shopee-light transition duration-300 flex items-center justify-center mx-auto">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                        Refazer Avaliação
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS / SOCIAL PROOF -->
+        <section id="proof-section" class="py-12 md:py-20">
+            <h3 class="text-3xl font-extrabold text-center text-ice-white mb-12">O Sucesso Deixa Pistas</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+                <div class="glass-card p-6 rounded-xl border border-success-green/30">
+                    <p class="text-lg italic text-ice-white/90 mb-4">"Avaliei meu perfil e em 2 semanas apliquei o ajuste na estratégia de conteúdo. Os resultados apareceram no primeiro mês!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/40x40/FF4500/0b0f14?text=J" onerror="this.src='https://placehold.co/40x40/FF4500/0b0f14?text=J'" alt="Foto de João S." class="w-10 h-10 rounded-full mr-3 border-2 border-shopee-red">
+                        <div>
+                            <p class="font-semibold text-shopee-light">João S. <span class="text-xs text-success-green ml-1">• Alto Potencial</span></p>
+                            <p class="text-sm text-ice-white/70">Designer, 34 anos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border border-shopee-red/30">
+                    <p class="text-lg italic text-ice-white/90 mb-4">"Eu estava no 'Potencial Baixo' e, seguindo as recomendações, consegui sair do zero e fazer minhas primeiras vendas."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/40x40/FF4500/0b0f14?text=M" onerror="this.src='https://placehold.co/40x40/FF4500/0b0f14?text=M'" alt="Foto de Marina F." class="w-10 h-10 rounded-full mr-3 border-2 border-shopee-red">
+                        <div>
+                            <p class="font-semibold text-shopee-light">Marina F. <span class="text-xs text-shopee-red ml-1">• Médio Potencial</span></p>
+                            <p class="text-sm text-ice-white/70">Professora, 41 anos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border border-success-green/30">
+                    <p class="text-lg italic text-ice-white/90 mb-4">"A clareza do meu resultado me fez focar nas áreas certas. Não perdi tempo e acelerei o processo de escala."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/40x40/FF4500/0b0f14?text=R" onerror="this.src='https://placehold.co/40x40/FF4500/0b0f14?text=R'" alt="Foto de Roberto C." class="w-10 h-10 rounded-full mr-3 border-2 border-shopee-red">
+                        <div>
+                            <p class="font-semibold text-shopee-light">Roberto C. <span class="text-xs text-success-green ml-1">• Alto Potencial</span></p>
+                            <p class="text-sm text-ice-white/70">Consultor, 52 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="py-12 md:py-20 max-w-3xl mx-auto">
+            <h3 class="text-3xl font-extrabold text-center text-ice-white mb-10">Perguntas Frequentes</h3>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="glass-card p-4 rounded-xl border border-shopee-red/30 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-shopee-light list-none">
+                        O que é o programa de afiliados da Shopee?
+                        <span class="group-open:rotate-180 transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-ice-white/70">É a oportunidade de lucrar promovendo produtos que já estão na plataforma da Shopee. Você ganha uma comissão por cada venda realizada através do seu link exclusivo, sem precisar comprar ou estocar mercadorias.</p>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="glass-card p-4 rounded-xl border border-shopee-red/30 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-shopee-light list-none">
+                        Eu preciso ter muitos seguidores ou aparecer em vídeos?
+                        <span class="group-open:rotate-180 transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-ice-white/70">Não! Nosso método foca em estratégias de tráfego orgânico e pago que não dependem da sua imagem pessoal ou de uma grande audiência inicial. A chave é o posicionamento estratégico dos seus links.</p>
+                </details>
+                
+                <!-- FAQ Item 3 -->
+                <details class="glass-card p-4 rounded-xl border border-shopee-red/30 cursor-pointer group">
+                    <summary class="flex justify-between items-center font-semibold text-shopee-light list-none">
+                        Por que fazer esta avaliação de potencial?
+                        <span class="group-open:rotate-180 transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-ice-white/70">Para economizar seu tempo. A avaliação mapeia seu perfil (tempo, experiência e foco) e indica o caminho mais rápido para você começar a ter resultados, evitando erros comuns e estratégias ineficazes.</p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-12 py-6 bg-charcoal border-t border-shopee-red/30">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm text-ice-white/50 space-y-2">
+            <p>
+                &copy; 2024 QUIZ-SHOPEE. Todos os direitos reservados.
+            </p>
+            <p class="text-xs">
+                <a href="#" class="hover:text-shopee-light mr-4">Política de Privacidade</a>
+                <a href="#" class="hover:text-shopee-light mr-4">Termos de Uso</a>
+                <a href="#" class="hover:text-shopee-light">Disclaimer de Ganhos</a>
+            </p>
         </div>
-      </div>
-    </div>
-  </div>
-</main>
+    </footer>
 
-<footer class="w-full text-center py-8 muted">© 2025 — Treinamento Lucre com Shopee. Resultados dependem da execução.</footer>
+    <!-- JavaScript Logic -->
+    <script>
+        // --- Variáveis de Estado ---
+        const state = {
+            currentStep: 0,
+            answers: [], 
+            totalScore: 0,
+            isQuizCompleted: false,
+            quizData: [
+                {
+                    question: "Qual o seu nível de familiaridade com o programa de afiliados da Shopee?",
+                    category: "Conhecimento",
+                    options: [
+                        { text: "Nunca ouvi falar ou sei o básico (0-1 ponto)", score: 1 },
+                        { text: "Já me cadastrei, mas nunca fiz nada (2-3 pontos)", score: 2 },
+                        { text: "Já fiz vendas, mas é inconstante (4-5 pontos)", score: 4 },
+                        { text: "Tenho estratégias e ganho consistentemente (6-7 pontos)", score: 6 },
+                    ]
+                },
+                {
+                    question: "Quantas horas por semana você pode dedicar de forma consistente?",
+                    category: "Tempo/Execução",
+                    options: [
+                        { text: "Menos de 1 hora (0-1 ponto)", score: 1 },
+                        { text: "2 a 4 horas (2-3 pontos)", score: 3 },
+                        { text: "4 a 8 horas (4-5 pontos)", score: 5 },
+                        { text: "Mais de 12 horas (6-7 pontos)", score: 7 },
+                    ]
+                },
+                {
+                    question: "Você tem experiência prévia em Marketing Digital (SEO, tráfego, redes sociais)?",
+                    category: "Experiência Digital",
+                    options: [
+                        { text: "Nenhuma (0-1 ponto)", score: 1 },
+                        { text: "Básica (Já criei conteúdo em alguma rede) (4-5 pontos)", score: 3 },
+                        { text: "Intermediária (Sei sobre funil/conversão) (4-5 pontos)", score: 5 },
+                        { text: "Avançada (Já gerenciei campanhas pagas ou orgânicas de sucesso) (6-7 pontos)", score: 7 },
+                    ]
+                },
+                {
+                    question: "Você tem facilidade em aprender e aplicar novas ferramentas ou tecnologias?",
+                    category: "Adaptabilidade",
+                    options: [
+                        { text: "Prefiro que seja bem simples e manual (0-1 ponto)", score: 1 },
+                        { text: "Aprendo com tutoriais, mas demoro (2-3 pontos)", score: 3 },
+                        { text: "Sou rápido em dominar novas ferramentas (4-5 pontos)", score: 5 },
+                    ]
+                },
+                {
+                    question: "Qual o seu principal objetivo com o programa de afiliados?",
+                    category: "Foco/Motivação",
+                    options: [
+                        { text: "Apenas um hobby, sem pressão (0-1 ponto)", score: 1 },
+                        { text: "Complementar a renda, algo pequeno (2-3 pontos)", score: 3 },
+                        { text: "Construir uma renda extra significativa (4-5 pontos)", score: 5 },
+                        { text: "Tornar-se a principal fonte de renda (6-7 pontos)", score: 7 },
+                    ]
+                }
+            ],
+            maxPossibleScore: 0,
+        };
 
-<script>
-// --- código JS permanece igual ---
-const questions = [
-  { q: "Você entende como funcionam as comissões do programa de afiliados da Shopee?", opts:["Sim, conheço bem","Tenho uma ideia","Não sei"] },
-  { q: "Você já tem experiência divulgando produtos online?", opts:["Sim, regularmente","Algumas vezes","Nunca"] },
-  { q: "Você quer ganhar dinheiro sem precisar estocar ou enviar produtos?", opts:["Sim, totalmente","Talvez","Não"] },
-  { q: "Você consegue se dedicar diariamente para promover produtos e aprender estratégias?", opts:["Sim, com consistência","Às vezes","Não consigo"] },
-  { q: "Você quer aprender táticas avançadas de marketing digital para afiliados?", opts:["Sim, todas","Algumas","Não"] },
-  { q: "Você prefere ganhar com vendas sem precisar aparecer em vídeos ou lives?", opts:["Sim, prefiro oculto","Talvez","Não"] },
-  { q: "Deseja receber suporte, dicas e acesso a uma comunidade de alunos ativos?", opts:["Sim, quero","Talvez mais tarde","Não quero"] }
-];
-const scoreMatrix = [[3,1,0],[3,1,0],[3,1,0],[3,1,0],[3,1,0],[3,1,0],[3,1,0]];
-let current = 0;
-const answers = new Array(questions.length).fill(null);
+        // Calcula a pontuação máxima possível
+        state.quizData.forEach(q => {
+            state.maxPossibleScore += q.options[q.options.length - 1].score;
+        });
 
-const quizContainer = document.getElementById('quizContainer');
-const quizContent = document.getElementById('quizContent');
-const progressFill = document.getElementById('progressFill');
-const startBtn = document.getElementById('startQuizBtn');
-const resultsContainer = document.getElementById('resultsContainer');
-const percentDisplay = document.getElementById('percentDisplay');
+        // --- Referências DOM ---
+        const heroSection = document.getElementById('hero-section');
+        const quizSection = document.getElementById('quiz-section');
+        const resultsSection = document.getElementById('results-section');
+        const questionsContainer = document.getElementById('questions-container');
+        const progressBar = document.getElementById('progress-bar');
+        const progressPercentage = document.getElementById('progress-percentage');
+        const currentStepDisplay = document.getElementById('current-step-display');
+        const totalStepsDisplay = document.getElementById('total-steps-display');
+        const backBtn = document.getElementById('back-btn');
+        const nextBtn = document.getElementById('next-btn');
 
-startBtn.addEventListener('click', () => {
-  document.querySelector('header').style.display='none';
-  quizContainer.classList.remove('hidden');
-  showQuestion(0);
-});
+        // Seções a serem escondidas quando o quiz começar (depoimentos e FAQ)
+        const proofSection = document.getElementById('proof-section');
+        const faqSection = document.getElementById('faq');
 
-function smoothProgress(targetPercent){
-  progressFill.style.width = targetPercent + '%';
-}
+        totalStepsDisplay.textContent = state.quizData.length;
 
-function showQuestion(idx){
-  current = idx;
-  const pct = Math.round((idx)/(questions.length-1)*100);
-  smoothProgress(pct);
-  const item = questions[idx];
-  let html = `<div class="pane show" role="group" aria-labelledby="q${idx}">`;
-  html += `<h3 id="q${idx}" class="text-xl font-semibold mb-4">${item.q}</h3><div id="optsWrap">`;
-  item.opts.forEach((opt,i)=>{
-    const sel = answers[idx]===i?'selected':'';
-    html += `<div class="quiz-option ${sel}" role="button" tabindex="0" data-opt="${i}" onclick="handleSelect(${i})">${opt}</div>`;
-  });
-  html += `</div><div class="flex items-center gap-3 mt-6"><button id="backBtn" class="btn-back" ${idx===0?'disabled':''}>Voltar</button><div style="flex:1"></div><button id="nextBtn" class="btn-primary">${idx===questions.length-1?'Ver Resultado':'Próxima'}</button></div></div>`;
-  quizContent.innerHTML = html;
-  document.getElementById('backBtn').addEventListener('click',()=>{if(idx===0){quizContainer.classList.add('hidden');document.querySelector('header').style.display='';}else showQuestion(idx-1);});
-  document.getElementById('nextBtn').addEventListener('click',()=>{if(answers[idx]===null){return;} if(idx<questions.length-1) showQuestion(idx+1); else finishQuiz();});
-  document.querySelectorAll('.quiz-option').forEach(n=>{n.classList.toggle('selected',answers[idx]===Number(n.dataset.opt)); n.addEventListener('keydown',ev=>{if(ev.key==='Enter') handleSelect(Number(n.dataset.opt));});});
-}
-window.handleSelect = function(optIndex){answers[current]=optIndex; showQuestion(current);}
+        // --- Funções de Fluxo e UI ---
 
-function computeTotal(){let total=0; for(let i=0;i<questions.length;i++){const ans=answers[i]; if(ans===null) continue; total += scoreMatrix[i][ans]||1;} return total;}
+        /**
+         * Inicia o quiz, escondendo o Hero e mostrando o Quiz Card com animação.
+         */
+        function startQuiz() {
+            // 1. Esconde o Hero e as seções auxiliares
+            heroSection.classList.add('opacity-0', 'scale-95');
+            proofSection.classList.add('hidden');
+            faqSection.classList.add('hidden');
+document.querySelector('nav').classList.add('hidden');
 
-function finishQuiz(){
-  quizContainer.classList.add('hidden');
-  resultsContainer.classList.remove('hidden');
-  const total = computeTotal();
-  let level='Médio', percent=50, color='var(--warn)';
-  if(total>=17){level='Alto';percent=90;color='var(--success)';} 
-  else if(total>=12){level='Médio';percent=55;color='var(--warn)';} 
-  else {level='Baixo';percent=25;color='var(--danger)';}
-  
-  const heading = document.getElementById('resultHeading');
-  const summary = document.getElementById('resultSummary');
-  const badgeWrap = document.getElementById('badgeWrap');
-  const rec = document.getElementById('recommendations');
-  
-  heading.innerText = `Seu nível de preparação: ${level}`;
-  badgeWrap.innerHTML=`<span class="result-badge" style="background:${color};">${level.toUpperCase()}</span>`;
-  percentDisplay.innerText = `${percent}%`;
-  
-  if(level==='Alto'){
-    summary.innerText = 'Você está pronto para iniciar e potencializar ganhos com a Shopee imediatamente!';
-    rec.innerHTML = '<li class="recommendation">Comece a aplicar as estratégias do curso sem demora.</li><li class="recommendation">Use redes sociais para divulgar produtos com alto potencial de comissão.</li><li class="recommendation">Participe da comunidade para acelerar resultados.</li>';
-  } else if(level==='Médio'){
-    summary.innerText = 'Você possui boas condições, mas ainda pode melhorar o seu potencial.';
-    rec.innerHTML = '<li class="recommendation">Revise seus conhecimentos sobre o programa de afiliados.</li><li class="recommendation">Organize melhor seu tempo e métodos de divulgação.</li><li class="recommendation">Explore estratégias gratuitas e pagas para acelerar resultados.</li>';
-  } else {
-    summary.innerText = 'Você ainda precisa se preparar melhor, mas já é possível começar devagar.';
-    rec.innerHTML = '<li class="recommendation">Dedique pelo menos 1 hora por dia para aprender e aplicar o método.</li><li class="recommendation">Foque em entender o funcionamento do afiliado da Shopee.</li><li class="recommendation">Participe da comunidade para obter suporte inicial.</li>';
-  }
-}
-</script>
+            setTimeout(() => {
+                heroSection.classList.add('hidden');
+                heroSection.classList.remove('opacity-0', 'scale-95'); 
+
+                // 2. Mostra o Quiz Card com animação
+                quizSection.classList.remove('hidden');
+                setTimeout(() => {
+                    quizSection.classList.remove('opacity-0', 'scale-95');
+                    renderStep(); // Renderiza a primeira pergunta
+                }, 50); 
+            }, 700); 
+        }
+
+        /**
+         * Renderiza a pergunta atual.
+         */
+        function renderStep() {
+            const stepIndex = state.currentStep;
+            const currentQuestion = state.quizData[stepIndex];
+            const totalSteps = state.quizData.length;
+
+            if (!currentQuestion) {
+                return showResults();
+            }
+
+            // Atualiza o progresso visual
+            const percentage = Math.round((stepIndex / totalSteps) * 100);
+            progressBar.style.width = `${percentage}%`;
+            progressPercentage.textContent = `${percentage}%`;
+            currentStepDisplay.textContent = stepIndex + 1;
+
+            // Limpa o container para nova pergunta
+            questionsContainer.innerHTML = '';
+
+            // Cria o elemento da pergunta e opções
+            const stepDiv = document.createElement('div');
+            stepDiv.id = `step-${stepIndex}`;
+            stepDiv.classList.add('animate-in', 'fade-in', 'slide-in-from-right-1', 'duration-500', 'ease-out');
+
+            // Título da Pergunta
+            const questionTitle = document.createElement('p');
+            questionTitle.classList.add('text-lg', 'md:text-xl', 'font-bold', 'text-ice-white', 'mb-6');
+            questionTitle.textContent = `${stepIndex + 1}. ${currentQuestion.question}`;
+            stepDiv.appendChild(questionTitle);
+
+            // Container das Opções (Grid/Flex responsivo)
+            const optionsDiv = document.createElement('div');
+            optionsDiv.classList.add('space-y-4');
+
+            currentQuestion.options.forEach((option, optionIndex) => {
+                const optionBtn = document.createElement('button');
+                optionBtn.setAttribute('role', 'radio');
+                optionBtn.setAttribute('tabindex', '0');
+                optionBtn.setAttribute('aria-checked', state.answers[stepIndex] === option.score ? 'true' : 'false');
+                optionBtn.setAttribute('data-score', option.score);
+                optionBtn.classList.add(
+                    'w-full', 'py-3', 'px-4', 'text-left', 'rounded-lg', 'border',
+                    'transition-all', 'duration-300', 'ease-out', 'font-medium',
+                    'text-ice-white/90', 'hover:bg-charcoal/50', 'hover:border-shopee-light',
+                    'focus:outline-none', 'focus:ring-2', 'focus:ring-shopee-red',
+                    'transform', 'hover:scale-[1.01]', 'active:scale-[0.99]'
+                );
+                
+                optionBtn.textContent = option.text;
+
+                // Destaca a opção selecionada
+                if (state.answers[stepIndex] === option.score) {
+                    optionBtn.classList.add('selected-option', 'border-shopee-red', 'bg-shopee-red/10', 'shadow-primary-glow', 'scale-[1.01]');
+                } else {
+                    optionBtn.classList.add('border-ice-white/20');
+                }
+
+                optionBtn.onclick = () => selectAnswer(option.score, stepIndex, optionBtn);
+                optionsDiv.appendChild(optionBtn);
+            });
+
+            stepDiv.appendChild(optionsDiv);
+            questionsContainer.appendChild(stepDiv);
+
+            updateNavButtons();
+        }
+
+        /**
+         * Seleciona a resposta e salva no estado.
+         */
+        function selectAnswer(score, stepIndex, selectedBtn) {
+            state.answers[stepIndex] = score;
+
+            // Remove a seleção de todos os irmãos
+            selectedBtn.parentNode.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('selected-option', 'border-shopee-red', 'bg-shopee-red/10', 'shadow-primary-glow', 'scale-[1.01]');
+                btn.classList.add('border-ice-white/20');
+                btn.setAttribute('aria-checked', 'false');
+            });
+
+            // Adiciona a seleção ao botão clicado
+            selectedBtn.classList.remove('border-ice-white/20');
+            selectedBtn.classList.add('selected-option', 'border-shopee-red', 'bg-shopee-red/10', 'shadow-primary-glow', 'animate-pulse-micro');
+            selectedBtn.setAttribute('aria-checked', 'true');
+
+            // Micro bounce
+            selectedBtn.classList.add('scale-[0.98]');
+            setTimeout(() => {
+                selectedBtn.classList.remove('scale-[0.98]');
+                selectedBtn.classList.add('scale-[1.01]');
+            }, 50);
+
+            updateNavButtons();
+        }
+
+        /**
+         * Atualiza o estado dos botões Voltar/Próxima.
+         */
+        function updateNavButtons() {
+            backBtn.disabled = state.currentStep === 0;
+            const isAnswered = state.answers[state.currentStep] !== undefined;
+            nextBtn.disabled = !isAnswered;
+            nextBtn.textContent = state.currentStep === state.quizData.length - 1 ? 'Ver Resultado' : 'Próxima →';
+        }
+
+        /**
+         * Avança para a próxima pergunta.
+         */
+        function nextStep() {
+            if (state.answers[state.currentStep] === undefined) return;
+
+            const currentStepEl = questionsContainer.querySelector(`#step-${state.currentStep}`);
+            if (currentStepEl) {
+                currentStepEl.classList.remove('animate-in', 'slide-in-from-right-1', 'fade-in');
+                currentStepEl.classList.add('animate-out', 'fade-out', 'slide-out-to-left-1', 'duration-300');
+            }
+
+            setTimeout(() => {
+                state.currentStep++;
+                renderStep();
+                if (currentStepEl) currentStepEl.remove();
+            }, 300); 
+        }
+
+        /**
+         * Volta para a pergunta anterior.
+         */
+        function prevStep() {
+            if (state.currentStep === 0) return;
+
+            const currentStepEl = questionsContainer.querySelector(`#step-${state.currentStep}`);
+            if (currentStepEl) {
+                currentStepEl.classList.remove('animate-in', 'slide-in-from-right-1', 'fade-in');
+                currentStepEl.classList.add('animate-out', 'fade-out', 'slide-out-to-right-1', 'duration-300');
+            }
+
+            setTimeout(() => {
+                state.currentStep--;
+                renderStep();
+            }, 300); 
+        }
+
+        /**
+         * Exibe a tela de resultados.
+         */
+        function showResults() {
+            // Calcula a pontuação final
+            state.totalScore = state.answers.reduce((acc, score) => acc + score, 0);
+            const finalPercentage = Math.round((state.totalScore / state.maxPossibleScore) * 100);
+
+            // Esconde o Quiz
+            quizSection.classList.add('opacity-0');
+            setTimeout(() => {
+                quizSection.classList.add('hidden');
+                // Mostra a tela de resultados
+                resultsSection.classList.remove('hidden');
+                setTimeout(() => {
+                    resultsSection.classList.remove('opacity-0');
+                    renderResults(finalPercentage); // Renderiza o conteúdo e anima o gráfico
+                }, 50);
+            }, 700);
+        }
+
+        /**
+         * Reseta o quiz e volta para a tela inicial (Hero).
+         */
+        function restartQuiz() {
+            // Reset state
+            state.currentStep = 0;
+            state.answers = [];
+            state.totalScore = 0;
+
+            // Hide results
+            resultsSection.classList.add('opacity-0');
+            
+            // Restore auxiliary sections
+            proofSection.classList.remove('hidden');
+            faqSection.classList.remove('hidden');
+
+            setTimeout(() => {
+                resultsSection.classList.add('hidden');
+                resultsSection.classList.remove('opacity-0');
+                
+                // Show hero
+                heroSection.classList.remove('hidden', 'scale-95', 'opacity-0');
+                // Garante que a opacidade inicie a 100% (ou a transição de entrada não acontecerá)
+                setTimeout(() => {
+                    heroSection.classList.remove('opacity-0', 'scale-95');
+                }, 50);
+            }, 700);
+        }
+
+
+        // --- Funções de Renderização de Resultados e Gráfico ---
+
+        const PIE_RADIUS = 45;
+        const PIE_CIRCUMFERENCE = 2 * Math.PI * PIE_RADIUS;
+        const PIE_CENTER = 50;
+        const chartColors = {
+            alto: '#22c55e',
+            medio: '#FF4500', // Shopee Red
+            baixo: '#dc2626'
+        };
+
+        /**
+         * Anima a contagem do percentual no centro do gráfico.
+         */
+        function animatePercentageCount(targetPercentage) {
+            const counter = document.getElementById('animated-percentage');
+            let current = 0;
+            const duration = 1500; // 1.5s de duração
+            const start = performance.now();
+
+            function step(timestamp) {
+                const elapsed = timestamp - start;
+                const progress = Math.min(1, elapsed / duration);
+                current = Math.floor(progress * targetPercentage);
+
+                counter.textContent = `${current}%`;
+
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    counter.textContent = `${targetPercentage}%`; 
+                }
+            }
+            requestAnimationFrame(step);
+        }
+
+        /**
+         * Renderiza o resultado final e o gráfico.
+         */
+        function renderResults(finalPercentage) {
+            const resultTitleEl = document.getElementById('result-title');
+            const resultSummaryEl = document.getElementById('result-summary');
+            const recommendationsListEl = document.getElementById('recommendations-list');
+            const svgEl = document.getElementById('pie-chart-svg');
+            
+            // Re-adiciona o círculo de fundo, garantindo que ele não seja limpo pela re-renderização
+            svgEl.innerHTML = '<circle cx="50" cy="50" r="45" fill="none" stroke="#1a1e26" stroke-width="10"/>'; 
+
+            let resultLevel;
+            let resultColor;
+            let recommendations;
+
+            if (finalPercentage >= 65) {
+                resultLevel = "ALTO";
+                resultColor = chartColors.alto;
+                resultTitleEl.innerHTML = `Seu Nível de Preparação: <span style="color:${resultColor}">Alto</span>`;
+                resultSummaryEl.textContent = "Excelente! Seu perfil já possui o conhecimento e a dedicação necessários. Foco total em estratégia de conversão e escala para resultados massivos.";
+                recommendations = [
+                    { icon: '<svg class="w-5 h-5 text-success-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>', text: "Otimização Avançada: Focar em testes A/B e otimizar as páginas de destino para aumentar a taxa de conversão." },
+                    { icon: '<svg class="w-5 h-5 text-success-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>', text: "Escala Vertical e Horizontal: Explorar tráfego pago ou diversificar fontes de tráfego orgânico para multiplicar os ganhos rapidamente." },
+                    { icon: '<svg class="w-5 h-5 text-success-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>', text: "Sistematização: Documentar e automatizar processos para criar uma máquina de vendas robusta e escalável." },
+                ];
+            } else if (finalPercentage >= 40) {
+                resultLevel = "MÉDIO";
+                resultColor = chartColors.medio;
+                resultTitleEl.innerHTML = `Seu Nível de Preparação: <span style="color:${resultColor}">Médio</span>`;
+                resultSummaryEl.textContent = "Potencial a desbloquear. Você tem uma boa base, mas precisa de um método CLARO para transformar tempo em vendas consistentes e resultados reais.";
+                recommendations = [
+                    { icon: '<svg class="w-5 h-5 text-shopee-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5 5.223 5 3 7.223 3 9.5a9.953 9.953 0 001.386 5.094 3 3 0 014.288 3.013 3 3 0 005.152-3.013A9.953 9.953 0 0021 9.5C21 7.223 18.777 5 16.5 5c-1.746 0-3.332.477-4.5 1.253z"></path></svg>', text: "Foco no Básico Otimizado: Domine 1-2 canais de tráfego (ex: Pinterest ou TikTok) com o método certo antes de tentar fazer tudo de uma vez." },
+                    { icon: '<svg class="w-5 h-5 text-shopee-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0v-5a2 2 0 012-2h2a2 2 0 012 2v5a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-5.586a1 1 0 00-.707.293l-4.707 4.707A1 1 0 0010 12h-2a2 2 0 00-2 2z"></path></svg>', text: "Estratégia de Produtos: Identifique produtos com alta demanda e baixa concorrência de afiliados. Não perca tempo promovendo o que não vende." },
+                    { icon: '<svg class="w-5 h-5 text-shopee-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10h16V7M4 7H6M4 7H3M20 7H18M20 7H21M6 7V5a2 2 0 012-2h8a2 2 0 012 2v2M6 7H4M20 7H18M18 7V5a2 2 0 00-2-2h-8a2 2 0 00-2 2v2M18 7H6"></path></svg>', text: "Rotina de Consistência: Implemente uma rotina de 30 minutos a 1 hora por dia, 5 vezes por semana. Consistência vence talento no Afiliado." },
+                ];
+            } else {
+                resultLevel = "BAIXO";
+                resultColor = chartColors.baixo;
+                resultTitleEl.innerHTML = `Seu Nível de Preparação: <span style="color:${resultColor}">Baixo</span>`;
+                resultSummaryEl.textContent = "Recomendado começar pelo básico, mas com um guia. Você tem a motivação, mas precisa do ponto de partida exato para evitar frustrações.";
+                recommendations = [
+                    { icon: '<svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2a3 3 0 00-3 3v2m8-3v-2m0 0V5m0 5h2m-2 0h-2m-2 0h-2m-2 0h-2m-2 0H3m14 0c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8z"></path></svg>', text: "Foco Total na Execução: Estabeleça no mínimo 5 horas semanais para dedicação focada. Zero resultados vêm de zero esforço." },
+                    { icon: '<svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2h2"></path></svg>', text: "Aprenda a Estrutura: Concentre-se em aprender a estrutura básica (Nicho > Produto > Divulgação) antes de tentar vender qualquer coisa." },
+                    { icon: '<svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>', text: "Simplicidade: Use a 'Regra do 3' - comece com 3 produtos e um único canal de divulgação. Não complique o início." },
+                ];
+            }
+
+            // Renderiza as Recomendações
+            recommendationsListEl.innerHTML = recommendations.map(rec => `
+                <li class="flex items-start text-ice-white/90">
+                    <span class="flex-shrink-0 mr-3 mt-1">${rec.icon}</span>
+                    <span class="text-base">${rec.text}</span>
+                </li>
+            `).join('');
+
+            // --- GRÁFICO SVG - Criação e Animação ---
+
+            // Definindo a fatia principal (Potencial)
+            const angle = (finalPercentage / 100) * 360;
+
+            // 2. Fatia principal (Potencial - Cor do Resultado)
+            const potentialSlice = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            potentialSlice.setAttribute('cx', PIE_CENTER);
+            potentialSlice.setAttribute('cy', PIE_CENTER);
+            potentialSlice.setAttribute('r', PIE_RADIUS);
+            potentialSlice.setAttribute('fill', 'none');
+            potentialSlice.setAttribute('stroke', resultColor); // Cor Dinâmica
+            potentialSlice.setAttribute('stroke-width', '10');
+            potentialSlice.setAttribute('stroke-dasharray', `${PIE_CIRCUMFERENCE} ${PIE_CIRCUMFERENCE}`);
+            potentialSlice.setAttribute('stroke-dashoffset', PIE_CIRCUMFERENCE); // Começa totalmente escondido
+            potentialSlice.setAttribute('transform', 'rotate(-90 50 50)'); // Começa do topo
+            potentialSlice.style.transition = 'stroke-dashoffset 1.5s ease-out';
+            
+            svgEl.appendChild(potentialSlice);
+
+            // 3. Animação real 
+            setTimeout(() => {
+                const targetOffset = PIE_CIRCUMFERENCE - (angle / 360) * PIE_CIRCUMFERENCE;
+                potentialSlice.style.strokeDashoffset = targetOffset;
+                animatePercentageCount(finalPercentage);
+            }, 500); 
+        }
+
+        // --- Inicialização ---
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            if (!prefersReducedMotion && window.innerWidth >= 768) {
+                const particlesEl = document.getElementById('particles');
+                for (let i = 0; i < 30; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle', 'absolute', 'rounded-full', 'bg-shopee-light/60');
+                    const size = Math.random() * 2 + 1; 
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.top = `${Math.random() * 100}vh`;
+                    particle.style.left = `${Math.random() * 100}vw`;
+                    particle.style.animation = `float ${Math.random() * 10 + 10}s infinite ease-in-out alternate`;
+                    particle.style.opacity = Math.random() * 0.5 + 0.2;
+                    particlesEl.appendChild(particle);
+                }
+
+                const style = document.createElement('style');
+                style.textContent += `
+                    @keyframes float {
+                        0% { transform: translate(0, 0) rotate(0deg); }
+                        100% { transform: translate(100px, 50px) rotate(360deg); }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+
+            totalStepsDisplay.textContent = state.quizData.length;
+        });
+
+    </script>
 </body>
 </html>
-
-
